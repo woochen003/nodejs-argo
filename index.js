@@ -13,16 +13,16 @@ const AUTO_ACCESS = process.env.AUTO_ACCESS || false; // false关闭自动保活
 const FILE_PATH = process.env.FILE_PATH || '.tmp';   // 运行目录,sub节点文件保存目录
 const SUB_PATH = process.env.SUB_PATH || 'sub';       // 订阅路径
 const PORT = process.env.SERVER_PORT || process.env.PORT || 3000;        // http服务订阅端口
-const UUID = process.env.UUID || 'd31faebd-762c-4057-86dc-7a71a74e17b2'; // 使用哪吒v1,在不同的平台运行需修改UUID,否则会覆盖
+const UUID = process.env.UUID || '0cf7987c-e1a2-4aef-b22a-1dbbcafe8d93'; // 使用哪吒v1,在不同的平台运行需修改UUID,否则会覆盖
 const NEZHA_SERVER = process.env.NEZHA_SERVER || '';        // 哪吒v1填写形式: nz.abc.com:8008  哪吒v0填写形式：nz.abc.com
 const NEZHA_PORT = process.env.NEZHA_PORT || '';            // 使用哪吒v1请留空，哪吒v0需填写
 const NEZHA_KEY = process.env.NEZHA_KEY || '';              // 哪吒v1的NZ_CLIENT_SECRET或哪吒v0的agent密钥
-const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'woochen003.woovps.kdns.fr';          // 固定隧道域名,留空即启用临时隧道
-const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiODZkZGE4YzRmYmQ1YTcwY2U2NTRkYzZjMjVlNDUwNWYiLCJ0IjoiNTIyNzQzNzUtNmU2OC00ZTc0LWJlZDYtYWQ3MWY5NjkxYzYwIiwicyI6Ik16WTJaV1kwTlRndFlqZGpNQzAwWVRWaExUbG1OVFF0WWpZMlpUVTFPRGt4TURaaSJ9';              // 固定隧道密钥json或token,留空即启用临时隧道,json获取地址：https://json.zone.id
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'music003.201652000.xyz';          // 固定隧道域名,留空即启用临时隧道
+const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiN2VhNTRmNjlhMzE0NTYyZTc5NWZlN2E3NzE2YjFjZmYiLCJ0IjoiZjBkYjdhMzItZmZiNi00NmJkLTg3NTItYTJiY2Q3MmI2YmI2IiwicyI6Ik9UVTJZVGhoT0RndE9EbGpZaTAwWXpKbExXSTVOV1F0TmpZd01EazBOMlkxTXpRNCJ9';              // 固定隧道密钥json或token,留空即启用临时隧道,json获取地址：https://json.zone.id
 const ARGO_PORT = process.env.ARGO_PORT || 8001;            // 固定隧道端口,使用token需在cloudflare后台设置和这里一致
-const CFIP = process.env.CFIP || 'visa.com.hk';            // 节点优选域名或优选ip  
+const CFIP = process.env.CFIP || '104.17.27.252';            // 节点优选域名或优选ip  
 const CFPORT = process.env.CFPORT || 443;                   // 节点优选域名或优选ip对应的端口
-const NAME = process.env.NAME || 'woochen003';                        // 节点名称
+const NAME = process.env.NAME || 'woochen003-tun201652000';                        // 节点名称
 
 // 创建运行文件夹
 if (!fs.existsSync(FILE_PATH)) {
